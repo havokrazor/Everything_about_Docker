@@ -2,6 +2,8 @@
 
 First let's create a sample container to test all of these container 
 
+`docker run --name=alpine --entrypoint=sleep -d alpine infinity`
+
 `Docker stats containername` can give you a snapshot of the container's performance as it is running.
 
 `Docker top containername` shows whats running inside the container without having to exec into it
