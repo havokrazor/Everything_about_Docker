@@ -2,7 +2,9 @@
 
 First let's create a sample container to test all of these container 
 
-`docker run --name=alpine --entrypoint=sleep -d alpine infinity`
+`docker run --name=alpine --entrypoint=sleep -d alpine infinity` 
+
+The container starts in the background, runs the sleep infinity command (keeping the container running indefinitely), and is named alpine.
 
 `Docker stats containername` can give you a snapshot of the container's performance as it is running.
 
