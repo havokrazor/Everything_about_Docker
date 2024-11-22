@@ -130,3 +130,19 @@ Tmpfs Mounts:
 | Flexibility | Easy to manage across containers | Requires managing host directory manually |
 | Portability | Docker manages and backs them up easily | Harder to port between hosts |
 | Performance | Optimized for Docker usage | Depends on the host filesystem |
+
+Things that are generally good to do :
+
+After a while you might come across problems of handling images you don't use so you can use 
+
+`docker image prune` 
+this will delete or remove images that are not used as much 
+
+similarly you can go the same for the volumns you might have created using 
+`docker volume prune`
+
+there's a shortcut for these two commmands are 
+`docker system prune` 
+this remove all unused images , containers and networks but does not remove volumes by default
+
+
