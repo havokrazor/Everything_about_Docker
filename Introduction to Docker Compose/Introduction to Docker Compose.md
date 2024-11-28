@@ -21,3 +21,38 @@ Docker compose is ...
 
 Every Docker Compose configuration must be in a ##YAML## file format and be saved under the file name, `docker-compose.yaml`.
 
+Wrintg a Docker compose configuration : A Docker compose file will normally consist of 
+
+- Version
+
+   Typically the first line will specify which version of Docker Compose is being used.
+
+- Services
+
+   Services is used to specify all of the containers the application needs to run. Keys to define within a service:
+   - image: Specifies the Docker image to use (e.g., nginx, postgres).
+   - build: Specifies the Dockerfile and context to build the image.
+   - ports: Maps host ports to container ports (e.g., 8080:80).
+   - volumes: Defines volumes or bind mounts.
+   - depends_on: Specifies service dependencies.
+   - environment: Sets environment variables.
+
+These are the most commonly used Docker Compose commmands , 
+
+|Command |	Description |
+|--------|--------------|
+|docker-compose up |	Start all services. |
+|docker-compose down |	Stop and remove all services and resources. |
+|docker-compose ps |	List running services. |
+|docker-compose logs |	View logs of services. |
+|docker-compose exec |	Execute a command in a running service. |
+|docker-compose build |	Build or rebuild service images. |
+|docker-compose start |	Start stopped containers. |
+|docker-compose stop |	Stop running containers. |
+|docker-compose restart |	Restart containers. |
+|docker-compose pull |	Pull the latest images. |
+|docker-compose rm |	Remove stopped containers. |
+|docker-compose config |	Validate and display the Compose file. |
+|docker-compose scale |	Scale services to multiple instances. |
+|docker-compose run |	Run a command or one-off container. |
+|docker-compose version |	Display Docker Compose version information. |
